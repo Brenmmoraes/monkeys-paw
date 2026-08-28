@@ -19,7 +19,7 @@ void first_wish()
     printf("2. knowledge\n");
     Sleep(2000);
     printf("3. Love\n\n");
-    Sleep(2000);
+    
 
     Sleep(3000);
     

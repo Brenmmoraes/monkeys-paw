@@ -3,8 +3,8 @@
 
 void first_choice();
 void first_wish();
-void destroy_paw();
-
+void kept_paw();
+void are_u_sure();
 
 int main(void)
 {
@@ -73,68 +73,4 @@ int main(void)
     Sleep(2000);
 
     return 0;
-}
-
-void first_choice()
-{
-    int choice;
-    printf("What do you do?\n\n");
-    printf("1. Make a first wish.\n");
-    printf("2. Keep the paw.\n");
-    printf("3. Burn the paw.\n\n");
-
-    printf("This is your first choice. Choose wisely.\n");
-    Sleep(2000);
-    printf("Once you choose, there is no going back.\n");
-
-    Sleep(2000);
-
-    printf("\nSo... are you ready?\n");
-    printf("Choose: ");
-
-    scanf("%d", &choice);
-
-    if (choice == 1)
-    {
-        first_wish();
-    }
-
-    else if (choice == 2)
-    {
-        printf("You chose to KEEP the paw?\n");
-        Sleep(2000);
-        printf("Haven't you heard?\n");
-        Sleep(1000);
-        printf("Some things...");
-        Sleep(1000);
-        printf(" are just... ");
-        Sleep(1000);
-        printf(" not meant to be kept...\n");
-        Sleep(1000);
-        printf("Most people would have burned it.\n");
-        Sleep(1000);
-        printf("Well...");
-        Sleep(2000);
-        printf(" you've made your choice.\n");
-
-    }
-
-    else
-    {
-
-        printf("You wish to DESTROY the paw?\n");
-        printf("Are sure of this?\n");
-        char answer;
-        getchar();
-        scanf("%c", &answer);
-
-        if (answer == 'y')
-        {
-            destroy_paw();
-        }
-        else
-        {
-            printf("gave_up_destroing_paw");
-        }
-    }
 }
