@@ -2,8 +2,11 @@
 #include <windows.h>
 
 void first_choice();
+void first_wish();
+void destroy_paw();
 
-void main(void)
+
+int main(void)
 {
     printf("\033[31m");
     printf("=================================\n");
@@ -68,6 +71,8 @@ void main(void)
     first_choice();
 
     Sleep(2000);
+
+    return 0;
 }
 
 void first_choice()
@@ -91,36 +96,45 @@ void first_choice()
 
     if (choice == 1)
     {
-        printf("You chose to MAKE A WISH?\n");
-        Sleep(2000);
-        printf("So it will be..\n");
-        printf("Do it then, make your wish, your first wish..\n\n");
         first_wish();
     }
 
-    if (choice == 2)
+    else if (choice == 2)
     {
         printf("You chose to KEEP the paw?\n");
         Sleep(2000);
-        printf("Haven't you heard theres aomethings you just cant keep?");
-        Printf("Well, you have already made you choice..");
-        kept_paw();
+        printf("Haven't you heard?\n");
+        Sleep(1000);
+        printf("Some things...");
+        Sleep(1000);
+        printf(" are just... ");
+        Sleep(1000);
+        printf(" not meant to be kept...\n");
+        Sleep(1000);
+        printf("Most people would have burned it.\n");
+        Sleep(1000);
+        printf("Well...");
+        Sleep(2000);
+        printf(" you've made your choice.\n");
+
     }
 
     else
     {
 
-        printf("You wish to DESTROY the pawn?\n");
+        printf("You wish to DESTROY the paw?\n");
         printf("Are sure of this?\n");
         char answer;
+        getchar();
         scanf("%c", &answer);
+
         if (answer == 'y')
         {
             destroy_paw();
         }
         else
         {
-            gave_up_destroing_paw();
+            printf("gave_up_destroing_paw");
         }
     }
 }
