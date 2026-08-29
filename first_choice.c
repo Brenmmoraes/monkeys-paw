@@ -1,25 +1,35 @@
 #include <stdio.h>
 #include <windows.h>
 
+int get_choice();
+
 void first_choice()
 {
     int choice;
+    Sleep(2000);
     printf("What do you do?\n\n");
+    Sleep(4000);
     printf("1. Make a first wish.\n");
+    Sleep(2000);    
     printf("2. Keep the paw.\n");
+    Sleep(2000); 
     printf("3. Burn the paw.\n\n");
+    Sleep(2000); 
 
     printf("This is your first choice. Choose wisely.\n");
     Sleep(2000);
-    printf("Once you choose, there is no going back.\n");
 
-    Sleep(2000);
+    printf("\nSo...");
+    Sleep(4000); 
+    printf(" are you ready?\n");
+    Sleep(4000); 
 
-    printf("\nSo... are you ready?\n");
-    printf("Choose: ");
+    printf("\033[35m");
+    printf("\n\nHmmm... I choose...  ");
+    printf("\033[0m");
 
-    scanf("%d", &choice);
-
+    choice = get_choice();
+      
     if (choice == 1)
     {
         first_wish();
@@ -30,7 +40,7 @@ void first_choice()
         kept_paw();
     }
 
-    else
+    else if (choice == 3)
     {
         are_u_sure();
     }
