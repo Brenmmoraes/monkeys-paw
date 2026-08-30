@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <windows.h>
 
-int get_choice();
+int get_choice(int max);
 
 void first_choice()
 {
     int choice;
     Sleep(2000);
     printf("What do you do?\n\n");
-    Sleep(4000);
+    Sleep(2000);
     printf("1. Make a first wish.\n");
     Sleep(2000);    
     printf("2. Keep the paw.\n");
@@ -20,15 +20,27 @@ void first_choice()
     Sleep(2000);
 
     printf("\nSo...");
-    Sleep(4000); 
+    Sleep(2000); 
     printf(" are you ready?\n");
-    Sleep(4000); 
+    Sleep(2000); 
 
-    printf("\033[35m");
-    printf("\n\nHmmm... I choose...  ");
+    printf("\033[34m");
+    printf("\n\nI choose  ");
     printf("\033[0m");
 
-    choice = get_choice();
+  
+
+    choice = get_choice(3);
+
+    printf("\033[1;31m");
+    Sleep(1000); 
+    printf("\n\n------------------------------------------------------------------------------");
+    Sleep(1000); 
+    printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+    Sleep(1000); 
+    printf("------------------------------------------------------------------------------\n\n");
+    printf("\033[0m");
+    
       
     if (choice == 1)
     {

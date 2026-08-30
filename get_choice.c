@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <windows.h>
 
-
-int get_choice(void)
+int get_choice(int max)
 {
     int choice;
 
-    if (scanf("%d", &choice) != 1 || choice < 1 || choice > 3)
+    if (scanf("%d", &choice) != 1 || choice < 1 || choice > max)
     {
         while (getchar() != '\n');
 
         Sleep(3000);
         printf("\n\n...\n");
         Sleep(3000);
-        printf("You only have three options.\n");
+        printf("You only have %d options.\n", max);
         Sleep(2000);
         printf("Please, don't embarrass yourself...");
         Sleep(2000);
@@ -21,15 +20,8 @@ int get_choice(void)
         Sleep(2000);
         printf("Let's try again...\n\n");
         Sleep(2000);
-        printf("What do you choose?\n\n");
-        Sleep(2000);
-        printf("In case you're wondering, I'am not repeating myself, just look up and choose...\n\n");
-        Sleep(2000);
-        printf("\033[35m");
-        printf("\n\nOk, Ok. I choose ");
-        printf("\033[0m");
 
-        return get_choice();
+        return get_choice(max);
     }
 
     return choice;
