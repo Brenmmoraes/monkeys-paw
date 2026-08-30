@@ -32,8 +32,11 @@ void kept_paw()
     printf(" are just... ");
     Sleep(1000);
 
+    printf(" not meant to be ");
+    Sleep(1000);
+
     printf("\033[1;31m");
-    printf(" not meant to be kept...\n\n");
+    printf("kept.\n\n");
 
     printf("\033[0m");
     Sleep(1000);
@@ -48,8 +51,17 @@ void kept_paw()
 
     Sleep(4000);
 
-
+    
     // CHAPTER TWO
+
+    printf("\033[1;31m");
+    Sleep(1000); 
+    printf("\n\n------------------------------------------------------------------------------");
+    Sleep(1000); 
+    printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+    Sleep(1000); 
+    printf("------------------------------------------------------------------------------\n\n");
+    printf("\033[0m");
 
     printf("\033[33m");
     printf("\n");

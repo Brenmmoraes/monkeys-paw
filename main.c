@@ -4,8 +4,9 @@
 void first_choice();
 void first_wish();
 void kept_paw();
-void are_u_sure();
 void get_choice();
+void are_u_sure();
+void sorry();
 
 int main(void)
 {
