@@ -35,6 +35,8 @@ void kept_paw()
     printf(" not meant to be ");
     Sleep(1000);
 
+    
+
     printf("\033[1;31m");
     printf("kept.\n\n");
 
@@ -54,7 +56,7 @@ void kept_paw()
     
     // CHAPTER TWO
 
-    printf("\033[1;31m");
+        printf("\033[1;31m");
     Sleep(1000); 
     printf("\n\n------------------------------------------------------------------------------");
     Sleep(1000); 
@@ -77,14 +79,14 @@ void kept_paw()
     printf("You stare at the paw.\n");
     Sleep(1000);
 
-    printf("It hasn't moved.");
+    printf("It hasn't moved.\n");
     Sleep(1000);
 
-    printf("That's good.");
+    printf("That's good. ");
     Sleep(1000);
 
-    printf("Probably\n");
-    Sleep(1000);
+    printf("Probably.\n");
+    Sleep(2000);
 
     printf("You pick it up.\n");
     Sleep(1000);
@@ -155,6 +157,22 @@ void kept_paw()
     Sleep(1000);
 
 
+    printf("You start thinking about what you could wish for...\n");
+    Sleep(2500);
+
+    printf("Money?\n");
+    Sleep(1500);
+
+    printf("Love?\n");
+    Sleep(1500);
+
+    printf("Power?\n");
+    Sleep(1500);
+
+    printf("Maybe this isn't such a bad idea after all.\n");
+    Sleep(2500);
+
+
     // CHOICE
 
     printf("\nWhat do you do?\n");
@@ -163,19 +181,11 @@ void kept_paw()
     printf("\n1. Make a wish.\n");
     Sleep(1000);
 
-    printf("\n3. Throw it in the fireplace.\n");
+    printf("\n2. Throw it in the fireplace.\n\n");
     Sleep(1000);
-
-    printf("Go on... choose it already..\n");
-    Sleep(2000);
-
-    printf("\033[34m");
-    printf("\n\nI choose  ");
-    printf("\033[0m");
 
     int choice;
     choice = get_choice(2);
-
 
     // CHOICE DIVIDER
 
