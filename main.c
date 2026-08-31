@@ -30,7 +30,10 @@ int main(void)
 
     printf("It looks...");
     Sleep(2000);
-    printf(" ancient...\n\n");
+    printf(" ancient...");
+    Sleep(2000);
+
+    printf(" \n\n");
     Sleep(2000);
 
     printf("As you touch it, you notice three marks carved into the wood:\n\n");

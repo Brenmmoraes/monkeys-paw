@@ -20,11 +20,11 @@ void are_u_sure(void)
     char answer = get_yes_no();
     int choice = 0;
 
-    if (answer == 'y')
+    if (answer == 'y' || answer == 'Y')
     {
         destroy_paw();
     }
-    else if (answer == 'n')
+    else if (answer == 'n' || answer == 'N')
     {
         printf("You want to keep the paw instead?\n");
         printf("1. No. This thing belongs in the fireplace.\n");
