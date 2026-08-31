@@ -6,8 +6,18 @@ void get_her_back();
 
 
 
-void wstop_loving_me(void)
+void stop_loving_me(void)
 {
+
+printf("\033[1;31m");
+Sleep(1000); 
+printf("\n\n------------------------------------------------------------------------------\n");
+Sleep(1000); 
+printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n");
+Sleep(1000); 
+printf("------------------------------------------------------------------------------\n\n");
+printf("\033[0m");
+
 printf("\nYou unlock the door.\n");
 Sleep(1500);
 
@@ -212,9 +222,6 @@ Sleep(2000);
 printf("So you wished her love away.\n");
 Sleep(3000);
 
-printf("So you wished her love away.\n");
-Sleep(3000);
-
 printf("Maybe you could have wished her to be less needy instead?\n");
 Sleep(3000);
 
@@ -236,7 +243,7 @@ Sleep(2500);
 printf("You lost something you never had.\n");
 Sleep(2500);
 
-printf("Could've been worse.\n");
+printf("Could've been worse.\n\n");
 Sleep(3000);
 
 printf("Much worse...\n");
@@ -245,50 +252,50 @@ Sleep(3000);
 printf("I mean, you still have one last wish.\n");
 Sleep(3000);
 
-printf("You can really let her leave, can you?\n");
+printf("You can really let her leave, can you?\n\n");
 Sleep(3000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("\033[91m1. Get her back\033[0m\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
+printf("So, what you gonna do?\n\n");
 Sleep(2000);
 
-printf("1. Get her back\n");
-Sleep(2000);
+
+
 
 int choice;
 choice = get_choice(1);

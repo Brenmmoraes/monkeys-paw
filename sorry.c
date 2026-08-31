@@ -6,16 +6,16 @@ void make_wish();
 
 void sorry()
 {
-    printf("\n\nOh no... I'm terribly sorry...");
+    printf("\n\nOh no...\n I'm terribly sorry...\n");
     Sleep(2000);
 
-    printf("That wasn't supposed to be there...\n");
+    printf("That wasn't supposed to be there...\n\n");
     Sleep(2000);
 
-    printf("It's FINDERS, KEEPERS...");
+    printf("\033[91mIt's FINDERS, KEEPERS...\033[0m\n\n");
     Sleep(3000);
 
-    printf("Let me do this again, please...");
+    printf("Let me do this again, please...\n");
     Sleep(3000);
 
     printf("Here you go.\n\n");
@@ -27,19 +27,19 @@ void sorry()
     printf("2. Make the first wish\n");
     Sleep(2000);
 
-    printf("\nThis is it. I guess this is an easier one, right?");
+    printf("\nThis is it. I guess this is an easier one, right?\n");
     Sleep(1000);
 
-    printf(" Maybe you'll be able to choose it faster.\n");
+    printf("Maybe you'll be able to choose it faster.\n");
     Sleep(2000);
 
-    printf("Go on...\n");
+    printf("Go on...\n\n");
     Sleep(2000);
 
     int choice = get_choice(2);
 
     if (choice == 1 || choice == 2)
     {
-        make_wish();
+        first_wish();
     }
 }

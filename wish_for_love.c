@@ -7,8 +7,23 @@ void second_wish();
 
 void wish_for_love(void)
 {
-printf("You chose LOVE.\n");
-Sleep(2000);
+
+printf("\033[1;95m");
+Sleep(1000); 
+printf("\n\n------------------------------------------------------------------------------\n");
+Sleep(1000); 
+printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n");
+Sleep(1000); 
+printf("------------------------------------------------------------------------------\n\n");
+printf("\033[0m");
+
+printf("\033[33m");
+printf("\n");
+printf("          CHAPTER TWO: TOO MUCH OF A GOOD THING\n");
+printf("\n");
+printf("\033[0m");
+
+printf("\nYou wished for \033[1;95mLOVE\033[0m.\n\n");
 
 printf("\nYou think about it for a moment.\n");
 Sleep(2000);
@@ -117,7 +132,7 @@ Sleep(1000);
 printf("Laughing.\n");
 Sleep(1500);
 
-printf("She seems to be everywhere.\n");
+printf("She seems to be \033[1;95meverywhere\033[0m.\n");
 Sleep(2000);
 
 printf("\nAt first, you like it.\n");
@@ -214,8 +229,10 @@ printf("Every ");
 Sleep(1000);
 printf("little");
 Sleep(1000);
-printf(" thing.\n");
-Sleep(1000);
+printf(" thing.");
+Sleep(2000);
+printf(" \n");
+Sleep(2000);
 
 printf("\nYou start getting irritated when you see her name on your phone.\n");
 Sleep(2000);
@@ -226,7 +243,7 @@ Sleep(1500);
 printf("Then relieved when she leaves.\n");
 Sleep(2500);
 
-printf("\nAnd that realization...\n");
+printf("\nAnd that realization... ");
 Sleep(1500);
 
 printf("doesn't feel very good.\n");
@@ -238,18 +255,16 @@ Sleep(2000);
 printf("At this point...");
 Sleep(1500);
 
-printf(" do you even \n");
+printf(" do you even...");
 Sleep(1500);
 
-printf("like ");
+printf("\033[1;95mlike\033[0m ");
 Sleep(1500);
 printf("her?\n");
 Sleep(2500);
-printf("\nYou remember the paw.\n");
+printf("\nYou remember the paw.\n\n");
 Sleep(2000);
 
-printf("\nAnd suddenly...\n");
-Sleep(1500);
 
 printf("Can you fix this?\n");
 Sleep(2500);
@@ -272,27 +287,30 @@ Sleep(2000);
 printf("You could just... ");
 Sleep(2000);
 
-printf("break up.\n");
+printf("break up.\n\n");
 Sleep(3000);
 
 printf("1. Make a wish\n");
 Sleep(3000);
 
-printf("2. Break up with...");
+printf("2. Break up \n\n");
 Sleep(3000);
-printf("her\n");
-Sleep(3000);
+
 
 int choice;
-choice = get_choice(2);
+    do
+    {
+        choice = get_choice(2);
 
-if (choice == 1)
-{
-    make_second_wish();
-}
-else 
-{
+        if (choice != 2)
+        {
+            Sleep(2000);
+            printf("\nSorry, this path is not complete yet.\n");
+            printf("For now, you can only break up.\n\n");
+        }
+
+    } while (choice != 2);
+
     break_up();
-}
 
 }

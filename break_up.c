@@ -9,6 +9,16 @@ void love_her_back();
 
 void break_up(void)
 {
+
+printf("\033[1;95m");
+Sleep(1000); 
+printf("\n\n------------------------------------------------------------------------------\n");
+Sleep(1000); 
+printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n");
+Sleep(1000); 
+printf("------------------------------------------------------------------------------\n\n");
+printf("\033[0m");
+
 printf("You decide to break up with her.\n");
 Sleep(2500);
 
@@ -75,13 +85,10 @@ Sleep(2500);
 printf("You feel guilty.\n");
 Sleep(1500);
 
-printf("Relieved.\n");
-Sleep(1500);
-
 printf("A little sad.\n");
 Sleep(2000);
 
-printf("But mostly...\n");
+printf("But mostly... ");
 Sleep(1500);
 
 printf("relieved.\n");
@@ -96,7 +103,7 @@ Sleep(2000);
 printf("\n\nThe next morning, you wake up to a message from her.\n");
 Sleep(2500);
 
-printf("\n\"Good morning <3 \"\n");
+printf("\n\033[95m\"Good morning <3 \"\033[0m\n");
 Sleep(2000);
 
 printf("\nYou stare at it.\n");
@@ -228,13 +235,13 @@ Sleep(2000);
 printf("She's smiling.\n");
 Sleep(1500);
 
-printf("A little too much.\n");
+printf("A little too much.\n\n");
 Sleep(2000);
 
 printf("\"Hi.\"\n");
 Sleep(2000);
 
-printf("\nYou stare at her.\n");
+printf("You stare at her.\n");
 Sleep(2000);
 
 printf("\"What are you doing here?\"\n");
@@ -299,13 +306,13 @@ Sleep(3000);
 printf("\nYou look at the time.\n");
 Sleep(2000);
 
-printf("It's getting late.\n");
+printf("It's getting late.\n\n");
 Sleep(1500);
 
 printf("She's still here.\n");
 Sleep(2500);
 
-printf("\nWhy she's still here? \n");
+printf("\nWhy she's still here? \n\n");
 Sleep(1500);
 
 printf("She looks at you.\n");
@@ -426,15 +433,20 @@ printf("2. Give it a chance. Wish to love her back.\n");
 Sleep(1500);
 
 int choice;
-choice = get_choice(2);
 
-if (choice == 1)
+do
 {
-    stop_loving_me();
-}
-else 
-{
-    love_her_back();
-}
+    choice = get_choice(2);
+
+    if (choice != 1)
+    {
+        Sleep(2000);
+        printf("\nSorry, this path is not complete yet.\n");
+        printf("For now, you can only wish for love.\n\n");
+    }
+
+    } while (choice != 1);
+
+stop_loving_me();   
 
 }

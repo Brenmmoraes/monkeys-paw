@@ -19,27 +19,9 @@ void first_choice()
     printf("This is your first choice. Choose wisely.\n");
     Sleep(2000);
 
-    printf("\nSo...");
-    Sleep(2000); 
-    printf(" are you ready?\n");
-    Sleep(2000); 
-
-    printf("\033[34m");
-    printf("\n\nI choose  ");
-    printf("\033[0m");
-
-  
-
     choice = get_choice(3);
 
-    printf("\033[1;31m");
-    Sleep(1000); 
-    printf("\n\n------------------------------------------------------------------------------");
-    Sleep(1000); 
-    printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
-    Sleep(1000); 
-    printf("------------------------------------------------------------------------------\n\n");
-    printf("\033[0m");
+
     
       
     if (choice == 1)

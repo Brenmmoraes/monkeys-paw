@@ -5,15 +5,24 @@ char get_choice_y_n(void);
 int get_choice(int max);
 
 void destroy_paw(void);
-void keep_paw(void);
+void kept_paw(void);
 
 void are_u_sure(void)
 {
-    printf("You wish to DESTROY the paw?\n");
+    printf("\033[1;31m");
+    Sleep(1000); 
+    printf("\n\n------------------------------------------------------------------------------\n");
+    Sleep(1000); 
+    printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n");
+    Sleep(1000); 
+    printf("------------------------------------------------------------------------------\n\n");
+    printf("\033[0m");
+    
+    printf("You wish to \033[91mDESTROY\033[0m the paw?\n\n");
     printf("Are you absolutely sure?\n");
     printf("Yes or no?\n");
 
-    char answer = get_choice_y_n();
+    char answer = get_yes_no();
     int choice = 0;
 
     if (answer == 'y')
@@ -34,7 +43,7 @@ void are_u_sure(void)
         }
         else 
         {
-            keep_paw();
+            kept_paw();
         }
     }
 }

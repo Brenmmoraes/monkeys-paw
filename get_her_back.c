@@ -4,7 +4,16 @@
 
 void get_her_back(void)
 {
-    printf("\nYou make the wish.\n");
+
+printf("\033[1;95m");
+Sleep(1000); 
+printf("\n\n------------------------------------------------------------------------------\n");
+Sleep(1000); 
+printf("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n");
+Sleep(1000); 
+printf("------------------------------------------------------------------------------\n\n");
+printf("\033[0m");
+printf("\nYou make the wish.\n");
 Sleep(2500);
 
 printf("The paw goes still.\n");
@@ -139,9 +148,9 @@ Sleep(3000);
 printf("You don't turn around.\n");
 Sleep(2000);
 
-printf("Instead, you just remember...\n");
+printf("Instead, you just remember...\n\n");
 Sleep(2500);
 
-printf("that was your last wish.\n");
+printf("\033[91mThat was your last wish.\033[0m\n\n");
 Sleep(4000);
 }
