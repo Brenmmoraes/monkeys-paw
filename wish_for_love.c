@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
-int get_choice(int max);
-void break_up();
-void second_wish();
+#include "game.h"
 
 void wish_for_love(void)
 {
@@ -19,7 +16,7 @@ printf("\033[0m");
 
 printf("\033[33m");
 printf("\n");
-printf("          CHAPTER TWO: TOO MUCH OF A GOOD THING\n");
+printf("CHAPTER TWO: TOO MUCH OF A GOOD THING\n");
 printf("\n");
 printf("\033[0m");
 

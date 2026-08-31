@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
-int get_choice(int max);
-void make_wish();
+#include "game.h"
 
 void sorry()
 {

@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
-int get_choice(int max);
-void sorry();
-void first_wish();
+#include "game.h"
 
 void kept_paw()
 {

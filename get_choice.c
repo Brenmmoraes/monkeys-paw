@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
+#include "game.h"
 
 int get_choice(int max)
 {

@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
-int get_choice(int max);
-void get_her_back();
-
-
+#include "game.h"
 
 void stop_loving_me(void)
 {

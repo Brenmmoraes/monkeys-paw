@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
+#include "game.h"
 
 void get_her_back(void)
 {

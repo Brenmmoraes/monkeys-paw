@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
-char get_choice_y_n(void);
-int get_choice(int max);
-
-void destroy_paw(void);
-void kept_paw(void);
+#include "game.h"
 
 void are_u_sure(void)
 {

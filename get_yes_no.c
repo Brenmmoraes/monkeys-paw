@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <windows.h>
+#include "game.h"
 
-char get_yes_no(void)
+char get_yes_no()
 {
     char answer;
 
